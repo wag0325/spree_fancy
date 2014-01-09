@@ -1,0 +1,54 @@
+#sidebar {
+  background-color: #F2F2EC;
+  padding: 0px;
+  margin: 0px;
+  
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+
+  nav#taxonomies{
+
+    padding: 15px;
+
+    .taxonomy-root{
+      color: #2B2B2A;
+      padding-bottom: 5px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .taxons-list{
+      list-style-type: none;
+      display: block;
+
+      li a{  
+              display:block;
+              line-height: 20px;
+              width: 99%;
+              padding: 5px;
+
+              border-radius: 2px 2px 2px 2px;
+              -moz-border-radius: 2px 2px 2px 2px;
+              -webkit-border-radius: 2px 2px 2px 2px;
+              
+              border-bottom: 1px solid #D9D9D4;
+              color: #00617F;
+             
+
+           &:hover{
+              background: rgb(76, 164, 192);
+              background: rgba(76, 164, 192, 0.5);
+            }
+          
+           
+        }
+
+    }
+  }
+
+}
+
+#sidebar_products_search{
+  padding: 0 15px 15px 15px;
+}

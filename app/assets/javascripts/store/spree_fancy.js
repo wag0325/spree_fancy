@@ -25,6 +25,7 @@ $(function(){
     var cached_carousel_2 = $('#latest-products .carousel').html();
 
     $('#home-slider > ul').bxSlider({
+      mode: 'fade',
       adaptiveHeight: true,
       auto: true,
       autoHover: true,
@@ -57,18 +58,7 @@ $(function(){
   $( "#product-variants .variants-buttons" ).buttonset();
   $( ".payment-method-selector").buttonset();
 
-  // Search hover
-  var searchHoverConfig = {
-    over: function(){
-      $("#search-bar").find('form').fadeIn('300');
-    },
-    timeout: 300, // number = milliseconds delay before onMouseOut
-    out: function(){
-      $("#search-bar").find("form").fadeOut('300');
-    }
-  };
-
-  $("#search-bar").hoverIntent(searchHoverConfig);
+ 
 
   // Cart table responsive fixes
   var cart_description_header = $('[data-hook="cart_items_headers"]').find('.cart-item-description-header');

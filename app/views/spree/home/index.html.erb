@@ -1,23 +1,15 @@
-<% content_for :subheader do %>
-  <%= render 'slider' %>
+<% content_for :sidebar do %>
+  <div data-hook="homepage_sidebar_navigation">
+    <%= render :partial => 'spree/shared/taxonomies' %>
+  </div>
 <% end %>
 
-<div id="welcome-message">
-  <div class="container">
-    <h1>
-      TEST!!!! TEST2!!! This is the second test!
-      <br>
-      Choose <a href="/products">anything</a> you wish, we’ll ship it <a href="/products">anywhere!</a>
-    </h1>
-  </div>
-</div>
+  <%= render 'slider' %>
 
-<div class="container">
   <% if @featured_products %>
     <div id="featured-products" class="row">
       <h3>Featured Products</h3>
-      <hr>
-      <ul class="carousel">
+      <ul >
         <% @featured_products.each do |product| %>
           <%= render 'product', :product => product %>
         <% end %>
@@ -28,12 +20,11 @@
   <% if @latest_products %>
     <div id="latest-products" class="row">
       <h3>Latest Products</h3>
-      <hr>
       <ul class="carousel">
         <% @latest_products.sort_by{ |product| product.created_at }.reverse.each do |product| %>
           <%= render 'product', :product => product %>
         <% end %>
       </ul>
-    </div>
   <% end %>
+
 </div>

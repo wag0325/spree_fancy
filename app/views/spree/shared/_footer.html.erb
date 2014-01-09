@@ -1,59 +1,54 @@
 <footer id="footer" class="sixteen columns" data-hook>
   <div class="container">
     
+    <div class="four columns alpha">
+      <h5>Subscribe</h5>
+        Register to receive updates and offers.
+        <form id="subscribe">
+          <p class="email">
+            <input type="text" name="email" id="email"/>
+          </p>
+          <p class="submit">
+            <input type="submit" value="send"/>
+          </p>
+        </form>
+      <h5>Connect</h5>
+      <%= link_to image_tag("icons/Twitter.png", alt: "Twitter", :width => 30, :height => 30), 'http://twitter.com/', {:class => "social"}%>
+      <%= link_to image_tag("icons/facebook.png", alt: "Twitter", :width => 30, :height => 30), 'http://twitter.com/', {:class => "social"}%>
+      <%= link_to image_tag("icons/googleplus.png", alt: "Twitter", :width => 30, :height => 30), 'http://twitter.com/', {:class => "social"}%>
+      <%= link_to image_tag("icons/pinterest.png", alt: "Twitter", :width => 30, :height => 30), 'http://twitter.com/', {:class => "social"}%>
+      <%= link_to image_tag("icons/flickr.png", alt: "Twitter", :width => 30, :height => 30), 'http://twitter.com/', {:class => "social"}%>
+    </div>
+
     <div class="four columns">
-      <%= image_tag "store/logo-white.png", :alt => "Spree Demo Theme", :id => "footer-logo" %>
-      <br>
-      <br>
-      <div class="phone">
-        <a href="callto:012341234567">01-234-1234-567</a>
-        </div>
-      <br>
-      <div class="email">
-        <a href="mailto:demo@spreecommerce.com">demo@spreecommerce.com</a>
-      </div>
-      <br>
-      <div class="address">
-        Spree Demo Store 01
-        <br>
-        Washigton DC, USA
-      </div>
+      <h5>About</h5>
+      Scraptsy provides digital artworks for your scrapbooks, cards, words and more.
     </div>
     
-    <div class="four columns">
-      <h5>Our Best Offers</h5>
-      <ul>
-        <li><a href="/products">New Products</a></li>
-        <li><a href="/products">Top Sellers</a></li>
-        <li><a href="/products">Specials</a></li>
-        <li><a href="/products">Manufacturers</a></li>
-        <li><a href="/products">Suppliers</a></li>
-        <li><a href="/products">Service</a></li>        
-      </ul>
-    </div>
     
     <div class="four columns">
-      <h5>Regular Services</h5>
+      <h5>Learn More</h5>
       <ul>
-        <li><a href="/products">Contact</a></li>
-        <li><a href="/products">Shipping Info</a></li>
         <li><a href="/products">Returns</a></li>
         <li><a href="/products">F.A.Q.</a></li>
-        <li><a href="/products">Size Chart</a></li>
-        <li><a href="/products">Personal Shopper</a></li>
+        <li><a href="/products">Sell</a></li>
+        <li><a href="/products">Blogs</a></li>
+        <li><a href="/products">Resource</a></li>
       </ul>
     </div>
     
     <div class="four columns">
-      <h5>Important info</h5>
-      <p>
-        This website is <strong>NOT</strong> a real store, 
-        it's a fully working demo application for 
-        <a href="http://spreecommerce.com" target="_blank">Spree Commerce</a>. 
-        Please feel free to play around, but don't submit 
-        any information you would not consider public!
-      </p>
+      <h5>Contact Us</h5>
+      <%= render :partial => 'spree/shared/contact' %>
+    </div>
+
+
+
+    <div id="copyright-wrap" class="sixteen columns">
+      <div id="copyright" >
+        &copy; 2014 Scraptsy. All Rights Reserved.  
+      </div>
     </div>
     
-  </div>
+  </div><!--.container ends-->
 </footer>

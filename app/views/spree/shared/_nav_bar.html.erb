@@ -1,0 +1,23 @@
+<nav id="top-nav-bar" class="columns sixteen">
+	
+	<figure id="logo" class="columns three" data-hook><%= logo %></figure>
+
+	<div id="searchbar" class="columns eight" >
+	<%= render :partial => 'spree/shared/search' %>
+	</div>
+	<div id="user-cart" class="columns five">
+	  <ul id="nav-bar" class="inline" data-hook>
+		
+		<li id="link-to-cart" data-hook>
+	  		<i class="icon-basket"></i><%= link_to_cart %>
+	  	</li>
+	  	<% if spree_current_user %>
+		  <li><%= link_to Spree.t(:my_account), spree.account_path %></li>
+		  <li><%= link_to Spree.t(:logout), spree.logout_path %></li>
+		<% else %>
+		  <li id="link-to-login"><%= link_to Spree.t(:login), spree.login_path %></li>
+		<% end %>
+
+	  </ul>
+  	</div>
+</nav>

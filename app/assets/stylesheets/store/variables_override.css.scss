@@ -1,1 +1,32 @@
 /* Override this file in your application to customize spree_fancy */
+
+#header{
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #D6D6D1 0%, #A6A6A2 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #D6D6D1 0%, #A6A6A2 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #D6D6D1 0%, #A6A6A2 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D6D6D1), color-stop(1, #A6A6A2));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #D6D6D1 0%, #A6A6A2 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #D6D6D1 0%, #A6A6A2 100%);
+
+	border-bottom: 1px solid #707070;
+	border-bottom: 1px solid #7d7c7d;
+
+	-webkit-box-shadow: 0px 3px 14px 0px rgba(50, 50, 50, 0.63);
+	-moz-box-shadow:    0px 3px 14px 0px rgba(50, 50, 50, 0.63);
+	box-shadow:         0px 3px 14px 0px rgba(50, 50, 50, 0.63);
+}
+
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+}

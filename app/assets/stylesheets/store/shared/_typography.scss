@@ -17,12 +17,19 @@ b, strong, dl dt {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;  
+  font-weight: 100;
+  font-family: "Open Sans Condensed";  
+  color: #404040;
+  display: block;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
+h6{
+  line-height: 22px;
+}
 #wrapper {
   h3, .search-results-title {
-    border-bottom: 2px solid lighten($c_blue, 30);
-    color: $c_blue;
+    color: #F58602;
   }  
 }
